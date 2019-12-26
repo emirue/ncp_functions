@@ -1,0 +1,46 @@
+{
+  "name": "ncp_functions",
+  "version": "1.0.0",
+  "description": "library of cloud functions functions in naver cloud platform",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "babel src --presets babel-preset-es2015 --out-dir dist",
+    "test": "mocha ./test/*.js --recursive -w --globals global --timeout 10000",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emirue/ncp_functions.git"
+  },
+  "keywords": [
+    "ncp",
+    "functions",
+    "lambda",
+    "naver",
+    "common",
+    "util",
+    "library"
+  ],
+  "author": "emirue",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emirue/ncp_functions/issues"
+  },
+  "homepage": "https://github.com/emirue/ncp_functions#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "query-string": "^6.9.0"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "mocha": "^6.2.2"
+  }
+}
