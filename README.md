@@ -6,7 +6,7 @@
 
 ## Install
 #### npm
-- 설치는 npm 을 이용하여 아래의 명령어로 설치할 수 있습니다.
+설치는 npm 을 이용하여 아래의 명령어로 설치할 수 있습니다.
 ```
 $ npm install ncp_functions
 ```
@@ -23,7 +23,7 @@ function main(params) {
 ```
 
 ## API
-###.parseParams(object)
+### .parseParams(object)
 Naver Cloud Platform 의 Cloud Functions 에서 실행되는 함수에서 받은 변수 params 를 파싱하는 함수입니다.
 headers, query 등이 반환됩니다.
 #### object
